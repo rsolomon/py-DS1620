@@ -10,8 +10,10 @@ version
 usage
 --------------------
 ```python
+import RPi.GPIO as GPIO
 from DS1620 import DS1620
 
-temp = DS1620(17, 18, 27)
-x.get_temperature()
+GPIO.cleanup()
+t_sensor = DS1620(17, 18, 27)
+t_sensor.get_temperature()
 ```

@@ -2,14 +2,14 @@ import RPi.GPIO as GPIO
 import time
 
 class DS1620:
-"""
-Instantiable class representing a DS1620 sensor.
-Get the latest at:
-https://github.com/rsolomon/py-DS1620
-
-Ported from cypherkey's GPIO C# lib:
-https://github.com/cypherkey/RaspberryPi.Net/blob/master/RaspberryPiDotNet/DS1620.cs
-"""
+	"""
+	Instantiable class representing a DS1620 sensor.
+	Get the latest at:
+	https://github.com/rsolomon/py-DS1620
+	
+	Ported from cypherkey's GPIO C# lib:
+	https://github.com/cypherkey/RaspberryPi.Net/blob/master/RaspberryPiDotNet/DS1620.cs
+	"""
 
 	def __init__(self, rst, dq, clk):
 		""" DS1620 sensor constructor.
